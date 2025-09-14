@@ -11,20 +11,12 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
-    name: "Amitesh Kumar",
-    title: "Founder",
-    company: "Lending King",
-    linkedin: "https://linkedin.com/in/amitesh-kumar",
-    description: "Entrepreneur and founder of Lending King, bringing innovative financial solutions to the market.",
-    image: ""
-  },
-  {
-    name: "Ravi Bhardwaj",
-    title: "Founder",
-    company: "Startup Legal & EduLegal",
-    linkedin: "https://linkedin.com/in/ravi-bhardwaj",
-    description: "Legal expert and founder of Startup Legal & EduLegal, providing comprehensive legal solutions for startups.",
-    image: ""
+    name: "Kumod Kumar",
+    title: "Chief Administrative Officer",
+    company: "Chandragupt Institute of Management Patna",
+    linkedin: "https://linkedin.com/in/kumod-kumar",
+    description: "Chief Administrative Officer at CIMP, bringing administrative excellence and institutional knowledge to the team.",
+    image: "/images/team/kumod-kumar.jpg"
   },
   {
     name: "Anshuman Sinha",
@@ -32,15 +24,15 @@ const teamMembers: TeamMember[] = [
     company: "Startup Steroid (Startup Ecosystem)",
     linkedin: "https://linkedin.com/in/anshuman-sinha",
     description: "Co-founder of Startup Steroid, dedicated to building a robust startup ecosystem and supporting entrepreneurs.",
-    image: ""
+    image: "/images/team/anshuman-sinha.jpg"
   },
   {
-    name: "Kumod Kumar",
-    title: "Chief Administrative Officer",
-    company: "Chandragupt Institute of Management Patna",
-    linkedin: "https://linkedin.com/in/kumod-kumar",
-    description: "Chief Administrative Officer at CIMP, bringing administrative excellence and institutional knowledge to the team.",
-    image: ""
+    name: "Ravi Bhardwaj",
+    title: "Founder",
+    company: "Startup Legal & EduLegal",
+    linkedin: "https://linkedin.com/in/ravi-bhardwaj",
+    description: "Legal expert and founder of Startup Legal & EduLegal, providing comprehensive legal solutions for startups.",
+    image: "/images/team/ravi-bhardwaj.jpg"
   },
   {
     name: "Pallavi Jha",
@@ -48,7 +40,15 @@ const teamMembers: TeamMember[] = [
     company: "Faith Tech Angel Investor Network",
     linkedin: "https://linkedin.com/in/pallavi-jha",
     description: "Strategic advisor with extensive experience in investment and startup ecosystem development.",
-    image: ""
+    image: "/images/team/pallavi-jha.jpg"
+  },
+  {
+    name: "Amitesh Kumar",
+    title: "Founder",
+    company: "Lending King",
+    linkedin: "https://linkedin.com/in/amitesh-kumar",
+    description: "Entrepreneur and founder of Lending King, bringing innovative financial solutions to the market.",
+    image: "/images/team/amitesh-kumar.jpg"
   }
 ];
 
@@ -68,11 +68,13 @@ export const TeamSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <div className="aspect-square relative bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white text-2xl font-bold mb-4 mx-auto">
-                    {member.name.split(' ').map(n => n[0]).join('')}
-                  </div>
+              <div className="aspect-square relative">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4">
                     {member.linkedin && (
                       <a
