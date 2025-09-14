@@ -12,15 +12,15 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
   return (
     <header className="bg-white shadow-sm border-b border-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-36">
+        <div className="flex justify-between items-center h-20 md:h-36">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <img 
                 src="/images/logo/logo-rectangular.png" 
                 alt="Faith Tech Angels" 
-                className="h-32 w-auto mr-6"
+                className="h-16 w-auto mr-3 md:h-32 md:mr-6"
               />
-              <h1 className="text-2xl font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</h1>
+              <h1 className="text-lg md:text-2xl font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</h1>
             </div>
           </div>
           
@@ -85,10 +85,10 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
             </div>
           </nav>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex-shrink-0">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-700 hover:text-orange-600 p-2"
+              className="text-gray-700 hover:text-orange-600 p-2 rounded-md hover:bg-orange-50 transition-colors"
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -97,69 +97,69 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
 
         {mobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-4 py-6 bg-orange-50 border-t border-orange-100">
+            <div className="px-4 py-4 bg-orange-50 border-t border-orange-100">
               <div className="flex items-center">
                 <img 
                   src="/images/logo/logo-rectangular.png" 
                   alt="Faith Tech Angels" 
-                  className="h-24 w-auto mr-4"
+                  className="h-16 w-auto mr-3"
                 />
-                <span className="text-lg font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</span>
+                <span className="text-base font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</span>
               </div>
             </div>
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
+            <div className="px-4 pt-3 pb-4 space-y-2 bg-white">
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
-                className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                  currentPage === 'home' ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  currentPage === 'home' ? 'text-orange-600 bg-orange-50' : 'text-gray-700 hover:text-orange-600 hover:bg-orange-50'
                 }`}
               >
                 Home
               </button>
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
-                className="w-full text-left text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-base font-medium"
+                className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
                 About Faith Tech
               </button>
               <button 
                 onClick={() => { setCurrentPage('chhath-hackathon'); setMobileMenuOpen(false); }}
-                className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                  currentPage === 'chhath-hackathon' ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  currentPage === 'chhath-hackathon' ? 'text-orange-600 bg-orange-50' : 'text-gray-700 hover:text-orange-600 hover:bg-orange-50'
                 }`}
               >
                 Chhath Hackathon
               </button>
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
-                className="w-full text-left text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-base font-medium"
+                className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
                 Market
               </button>
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
-                className="w-full text-left text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-base font-medium"
+                className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
                 Success Stories
               </button>
               <button 
                 onClick={() => { setCurrentPage('investment'); setMobileMenuOpen(false); }}
-                className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                  currentPage === 'investment' ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  currentPage === 'investment' ? 'text-orange-600 bg-orange-50' : 'text-gray-700 hover:text-orange-600 hover:bg-orange-50'
                 }`}
               >
                 Invest
               </button>
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
-                className="w-full text-left text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-base font-medium"
+                className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
                 Apply
               </button>
               <button 
                 onClick={() => { setCurrentPage('blog'); setMobileMenuOpen(false); }}
-                className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${
-                  currentPage === 'blog' ? 'text-orange-600' : 'text-gray-700 hover:text-orange-600'
+                className={`w-full text-left px-4 py-3 rounded-lg text-base font-medium transition-colors ${
+                  currentPage === 'blog' ? 'text-orange-600 bg-orange-50' : 'text-gray-700 hover:text-orange-600 hover:bg-orange-50'
                 }`}
               >
                 Blog
