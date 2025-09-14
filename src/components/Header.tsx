@@ -12,15 +12,20 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
   return (
     <header className="bg-white shadow-sm border-b border-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-36">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-orange-600">Faith Tech Angels</h1>
+            <div className="flex-shrink-0 flex items-center">
+              <img 
+                src="/images/logo/logo-rectangular.png" 
+                alt="Faith Tech Angels" 
+                className="h-32 w-auto mr-6"
+              />
+              <h1 className="text-2xl font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</h1>
             </div>
           </div>
           
           <nav className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="ml-64 flex items-baseline space-x-4 whitespace-nowrap">
               <button 
                 onClick={() => setCurrentPage('home')}
                 className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -92,7 +97,17 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
 
         {mobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-orange-100">
+            <div className="px-4 py-6 bg-orange-50 border-t border-orange-100">
+              <div className="flex items-center">
+                <img 
+                  src="/images/logo/logo-rectangular.png" 
+                  alt="Faith Tech Angels" 
+                  className="h-24 w-auto mr-4"
+                />
+                <span className="text-lg font-bold text-orange-600 whitespace-nowrap">Faith Tech Angels</span>
+              </div>
+            </div>
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-white">
               <button 
                 onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
                 className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${

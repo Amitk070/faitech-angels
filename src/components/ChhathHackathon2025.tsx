@@ -41,25 +41,25 @@ export const ChhathHackathon2025: React.FC = () => {
     {
       phase: "Application & Submission",
       date: "1st Week October 2025",
-      description: "Startups submit detailed pitch deck and functional prototype",
+      description: "Startups submit a detailed pitch deck outlining the problem statement, solution, business model, and team. A functional prototype, app, or proof-of-concept is required.",
       icon: <Clock className="w-6 h-6" />
     },
     {
       phase: "Expert Shortlisting",
       date: "2nd Week October 2025",
-      description: "Expert panel evaluates submissions based on feasibility and impact",
+      description: "An expert panel of judges from government, industry, and academia will evaluate submissions based on feasibility, scalability, and social impact.",
       icon: <Target className="w-6 h-6" />
     },
     {
       phase: "Final Pitch Day",
       date: "3rd Week October 2025",
-      description: "Selected teams present live demonstrations to distinguished jury",
+      description: "Selected teams will present live demonstrations to a distinguished jury of policymakers, civic officials, and investors.",
       icon: <Award className="w-6 h-6" />
     },
     {
       phase: "Recognition & Support",
       date: "Post-Event",
-      description: "Winning teams receive mentorship, networking, and potential funding",
+      description: "Winning teams will receive an exclusive opportunity for mentorship, networking opportunities, and potential funding through angel investors.",
       icon: <CheckCircle className="w-6 h-6" />
     }
   ];
@@ -67,22 +67,22 @@ export const ChhathHackathon2025: React.FC = () => {
   const partners = [
     {
       category: "Government",
-      description: "Urban Development, Tourism, Health, Police, and Environmental authorities",
+      description: "Urban Development, Tourism, Health, Police, and Environmental authorities who provide regulatory support and infrastructure access.",
       icon: <Shield className="w-6 h-6" />
     },
     {
       category: "Academic Partners",
-      description: "Universities and innovation hubs to identify and mentor emerging talent",
+      description: "Universities and innovation hubs to identify and mentor emerging talent, providing research support and technical expertise.",
       icon: <Lightbulb className="w-6 h-6" />
     },
     {
       category: "Industry Partners",
-      description: "Angel investors, CSR divisions of major corporations, and technology associations",
+      description: "Angel investors, CSR divisions of major corporations, and technology associations offering funding and business development support.",
       icon: <Users className="w-6 h-6" />
     },
     {
       category: "Community Groups",
-      description: "NGOs, volunteer organizations, and local leaders with on-the-ground knowledge",
+      description: "NGOs, volunteer organizations, and local leaders who provide invaluable on-the-ground knowledge and community engagement.",
       icon: <MapPin className="w-6 h-6" />
     }
   ];
@@ -100,8 +100,18 @@ export const ChhathHackathon2025: React.FC = () => {
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
               Bridging Ancient Tradition with Modern Technology
             </p>
-            <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto opacity-90">
-              Transform Chhath into a Tech-Enabled Model Festival through innovative solutions that enhance safety, sustainability, and community engagement.
+            <p className="text-lg md:text-xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed">
+              The Chhath festival is one of India's most important and ancient Hindu celebrations, 
+              honouring Surya Dev (the Sun God). Primarily celebrated in Bihar, Jharkhand and Uttar 
+              Pradesh, this four-day festival involves rigorous fasting, holy bathing, and prayers 
+              offered at riverbanks, or Ghats.
+            </p>
+            <p className="text-lg md:text-xl mb-12 max-w-4xl mx-auto opacity-90 leading-relaxed">
+              With millions of devotees participating all over the world, Chhath is a powerful symbol of 
+              devotion, environmental sanctity, community engagement, and cultural heritage. It's also 
+              a significant economic event, supporting thousands of local vendors and small 
+              businesses with a market size estimated in the hundreds of crores of Indian Rupees 
+              annually.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -311,14 +321,68 @@ export const ChhathHackathon2025: React.FC = () => {
         {activeTab === 'mission' && (
           <div className="space-y-16">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">A Movement for Change</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-8">Our Mission: Bridging Tradition and Technology</h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                Chhath Hackathon 2025 aims to leverage the power of technology to address the 
+                challenges and opportunities of a festival celebrated at a massive scale. We're calling on 
+                innovative startups, entrepreneurs, and tech enthusiasts to design solutions that make 
+                Chhath safer, more hygienic, and more sustainable.
+              </p>
+              
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Goals:</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <Target className="w-5 h-5 text-orange-600" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2">Solve Real-World Problems</h4>
+                        <p className="text-gray-700 leading-relaxed">
+                          Identify scalable, cost-efficient, and sustainable technologies that assist government bodies, 
+                          civic agencies, local vendors, and devotees.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <Users className="w-5 h-5 text-orange-600" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2">Drive Public-Private Collaboration</h4>
+                        <p className="text-gray-700 leading-relaxed">
+                          Foster a collaborative ecosystem for the safe, hygienic, and smooth conduct of the festival.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <Lightbulb className="w-5 h-5 text-orange-600" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-gray-900 mb-2">Catalyze Local Innovation</h4>
+                        <p className="text-gray-700 leading-relaxed">
+                          Promote entrepreneurship and job creation while preserving the cultural essence of Chhath.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-r from-orange-600 to-yellow-600 rounded-2xl p-8 text-white">
+              <h2 className="text-3xl font-bold mb-6 text-center">A Movement for Change</h2>
+              <p className="text-lg mb-6 leading-relaxed text-center max-w-4xl mx-auto">
                 This initiative is more than a competition, it's a movement to transform Chhath into a 
                 Tech-Enabled Model Festival. By fusing deep-rooted tradition with modern innovation, we can 
                 enhance the safety and convenience for millions of devotees while promoting local entrepreneurship 
                 and sustainable practices.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg leading-relaxed text-center max-w-4xl mx-auto">
                 The Chhath Hackathon 2025 will set a powerful example for how cultural heritage can be 
                 preserved and managed with cutting-edge technology.
               </p>
