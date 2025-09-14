@@ -54,9 +54,14 @@ export function HeroBanner() {
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               {banners[currentBanner].description}
             </p>
-            <button className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
+            <a
+              href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+            >
               {banners[currentBanner].cta}
-            </button>
+            </a>
           </div>
 
           {/* Banner Navigation */}

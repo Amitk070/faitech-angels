@@ -10,7 +10,7 @@ export function MarketOpportunity() {
             Total Addressable Market (TAM)
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The Faitech sector in India represents a massive, largely untapped market opportunity 
+            The Faith Tech sector in India represents a massive, largely untapped market opportunity 
             with exponential growth potential across multiple verticals.
           </p>
         </div>

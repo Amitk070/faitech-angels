@@ -70,7 +70,7 @@ export function SuccessStories() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Success Stories from India's Faitech Ecosystem
+            Success Stories from India's Faith Tech Ecosystem
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Witness the remarkable growth of AI-powered spiritual platforms that are 
@@ -125,7 +125,7 @@ export function SuccessStories() {
           <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white p-8 rounded-xl">
             <h3 className="text-2xl font-bold mb-4">Join the Next Wave of Success Stories</h3>
             <p className="text-lg mb-6 opacity-90">
-              These startups represent just the beginning of India's Faitech revolution. 
+              These startups represent just the beginning of India's Faith Tech revolution. 
               Be part of the next generation of unicorns in the faith-tech space.
             </p>
             <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors">

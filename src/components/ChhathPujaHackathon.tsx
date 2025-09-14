@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaithTechLogo } from './FaithTechLogo';
 
 interface HackathonBanner {
@@ -15,50 +15,14 @@ const hackathonBanners: HackathonBanner[] = [
     id: 1,
     title: "Chhath Puja Tech Innovation Challenge",
     description: "Celebrate the ancient festival of Chhath Puja with innovative tech solutions that honor tradition while embracing the future. Join us in creating digital solutions that preserve and promote our cultural heritage.",
-    image: "/images/10545.jpg",
+    image: "/images/10477.jpg",
     date: "November 15-17, 2024",
     prize: "₹2,00,000 Prize Pool"
-  },
-  {
-    id: 2,
-    title: "Faith Tech Startup Showcase",
-    description: "Showcase your startup's potential to leading investors and industry experts in the Faith Tech ecosystem. Present your innovative solutions during this auspicious festival period.",
-    image: "/images/22408.jpg",
-    date: "November 18-20, 2024",
-    prize: "Investment Opportunities"
-  },
-  {
-    id: 3,
-    title: "Digital Transformation for Bihar",
-    description: "Build solutions that can transform Bihar's digital landscape and create lasting impact in the community. Honor the spirit of Chhath Puja by contributing to Bihar's technological advancement.",
-    image: "/images/533dadd0-1e64-4135-83ef-a1891932e607.jpg",
-    date: "November 21-23, 2024",
-    prize: "Government Partnership"
   }
 ];
 
 export const ChhathPujaHackathon: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const [isNominating, setIsNominating] = useState(false);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % hackathonBanners.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % hackathonBanners.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + hackathonBanners.length) % hackathonBanners.length);
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-  };
 
   const handleNominate = () => {
     setIsNominating(true);
@@ -85,19 +49,17 @@ export const ChhathPujaHackathon: React.FC = () => {
           </p>
         </div>
 
-        {/* Sliding Banner */}
+        {/* Hackathon Banner */}
         <div className="relative mb-12">
-          <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-            {hackathonBanners.map((banner, index) => (
+          <div className="relative h-[500px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+            {hackathonBanners.map((banner) => (
               <div
                 key={banner.id}
-                className={`absolute inset-0 transition-opacity duration-1000 ${
-                  index === currentSlide ? 'opacity-100' : 'opacity-0'
-                }`}
+                className="absolute inset-0"
               >
                 <div className="relative h-full flex flex-col md:flex-row">
                   {/* Image Section - Full width on mobile, 50% on desktop */}
-                  <div className="w-full md:w-1/2 h-1/2 md:h-full relative bg-gradient-to-br from-orange-400 to-yellow-500">
+                  <div className="w-full md:w-1/2 h-[200px] md:h-full relative bg-gradient-to-br from-orange-400 to-yellow-500">
                     <img
                       src={banner.image}
                       alt={banner.title}
@@ -114,7 +76,7 @@ export const ChhathPujaHackathon: React.FC = () => {
                   </div>
                   
                   {/* Content Section - Full width on mobile, 50% on desktop */}
-                  <div className="w-full md:w-1/2 h-1/2 md:h-full bg-gradient-to-br from-orange-600 to-yellow-600 flex items-center p-4 md:p-6">
+                  <div className="w-full md:w-1/2 h-[300px] md:h-full bg-gradient-to-br from-orange-600 to-yellow-600 flex items-center p-4 md:p-6 overflow-y-auto">
                     <div className="text-white w-full">
                       <div className="flex items-start mb-3">
                         <div className="w-8 h-8 md:w-10 md:h-10 bg-white/20 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
@@ -123,7 +85,7 @@ export const ChhathPujaHackathon: React.FC = () => {
                           </svg>
                         </div>
                         <div className="flex-1">
-                          <h3 className="text-lg md:text-2xl font-bold text-white mb-2 leading-tight">{banner.title}</h3>
+                          <h3 className="text-base md:text-2xl font-bold text-white mb-2 leading-tight">{banner.title}</h3>
                           <div className="flex items-center space-x-2">
                             <span className="bg-white text-orange-600 px-2 py-1 rounded-full text-xs font-semibold">HACKATHON</span>
                             <span className="bg-yellow-400 text-orange-800 px-2 py-1 rounded-full text-xs font-semibold">TECH FEST</span>
@@ -131,7 +93,12 @@ export const ChhathPujaHackathon: React.FC = () => {
                         </div>
                       </div>
                       
-                      <p className="text-xs md:text-sm mb-3 md:mb-4 leading-relaxed text-white/90 line-clamp-2 md:line-clamp-3">{banner.description}</p>
+                      <p className="text-sm md:text-sm mb-3 md:mb-4 leading-relaxed text-white/90" style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden'
+                      }}>{banner.description}</p>
                       
                       <div className="space-y-1 md:space-y-2 mb-3 md:mb-4">
                         <div className="flex items-center">
@@ -148,8 +115,8 @@ export const ChhathPujaHackathon: React.FC = () => {
                         </div>
                       </div>
                       
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-2 md:space-y-0">
-                        <button className="bg-white text-orange-600 px-3 py-2 md:px-4 md:py-2 rounded-lg text-xs md:text-sm font-semibold hover:bg-gray-100 transition-colors duration-300 w-full md:w-auto">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0">
+                        <button className="bg-white text-orange-600 px-4 py-3 md:px-4 md:py-2 rounded-lg text-sm md:text-sm font-semibold hover:bg-gray-100 transition-colors duration-300 w-full md:w-auto">
                           Nominate Your Startup
                         </button>
                         <div className="text-center md:text-right">
@@ -164,36 +131,6 @@ export const ChhathPujaHackathon: React.FC = () => {
             ))}
           </div>
 
-          {/* Navigation Arrows - Hidden on mobile, visible on desktop */}
-          <button
-            onClick={prevSlide}
-            className="hidden md:block absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-300"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            onClick={nextSlide}
-            className="hidden md:block absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors duration-300"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-
-          {/* Dots Indicator */}
-          <div className="absolute bottom-2 md:bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            {hackathonBanners.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => goToSlide(index)}
-                className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-colors duration-300 ${
-                  index === currentSlide ? 'bg-white' : 'bg-white/50'
-                }`}
-              />
-            ))}
-          </div>
         </div>
 
         {/* Hackathon Details */}

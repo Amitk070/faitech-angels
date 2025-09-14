@@ -1,7 +1,7 @@
 import React from 'react';
 import { Smartphone, Heart, TrendingUp, Users } from 'lucide-react';
 
-export function AboutFaith Tech() {
+export function AboutFaithTech() {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

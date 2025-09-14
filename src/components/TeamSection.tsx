@@ -12,42 +12,42 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     name: "Kumod Kumar",
-    title: "Chief Administrative Officer",
+    title: "Advisor",
     company: "Chandragupt Institute of Management Patna",
     linkedin: "https://linkedin.com/in/kumod-kumar",
-    description: "Chief Administrative Officer at CIMP, bringing administrative excellence and institutional knowledge to the team.",
+    description: "Bringing administrative excellence and institutional knowledge to the team. Provides mentoring and networking support for Faith Tech initiatives.",
     image: "/images/team/kumod-kumar.jpg"
   },
   {
     name: "Anshuman Sinha",
-    title: "Co-Founder",
+    title: "Advisor",
     company: "Startup Steroid (Startup Ecosystem)",
     linkedin: "https://linkedin.com/in/anshuman-sinha",
-    description: "Co-founder of Startup Steroid, dedicated to building a robust startup ecosystem and supporting entrepreneurs.",
+    description: "Dedicated to building a robust startup ecosystem and supporting entrepreneurs. Offers mentoring and networking support for emerging startups.",
     image: "/images/team/anshuman-sinha.jpg"
   },
   {
     name: "Ravi Bhardwaj",
-    title: "Founder",
+    title: "Advisor",
     company: "Startup Legal & EduLegal",
     linkedin: "https://linkedin.com/in/ravi-bhardwaj",
-    description: "Legal expert and founder of Startup Legal & EduLegal, providing comprehensive legal solutions for startups.",
+    description: "Legal expert providing comprehensive legal solutions for startups. Delivers mentoring and networking support in legal and compliance matters.",
     image: "/images/team/ravi-bhardwaj.jpg"
   },
   {
     name: "Pallavi Jha",
-    title: "Strategic Advisor",
+    title: "Advisor",
     company: "Faith Tech Angel Investor Network",
     linkedin: "https://linkedin.com/in/pallavi-jha",
-    description: "Strategic advisor with extensive experience in investment and startup ecosystem development.",
+    description: "Strategic advisor with extensive experience in investment and startup ecosystem development. Provides mentoring and networking support for Faith Tech ventures.",
     image: "/images/team/pallavi-jha.jpg"
   },
   {
     name: "Amitesh Kumar",
-    title: "Founder",
+    title: "Advisor",
     company: "Lending King",
     linkedin: "https://linkedin.com/in/amitesh-kumar",
-    description: "Entrepreneur and founder of Lending King, bringing innovative financial solutions to the market.",
+    description: "Entrepreneur bringing innovative financial solutions to the market. Offers mentoring and networking support for financial technology startups.",
     image: "/images/team/amitesh-kumar.jpg"
   }
 ];
@@ -56,14 +56,14 @@ export const TeamSection: React.FC = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Founding Charter Members
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet the visionary leaders who are building the future of entrepreneurship in Bihar and beyond.
-          </p>
-        </div>
+                    <div className="text-center mb-16">
+                      <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        Our Advisors
+                      </h2>
+                      <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Meet our distinguished advisors who provide mentoring and networking support to Faith Tech initiatives and startups.
+                      </p>
+                    </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
           {teamMembers.map((member, index) => (
@@ -109,11 +109,11 @@ export const TeamSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <p className="text-gray-600">
-            These founding members represent the diverse expertise and vision that drives our mission forward.
-          </p>
-        </div>
+                    <div className="text-center mt-12">
+                      <p className="text-gray-600">
+                        Our advisors bring diverse expertise and provide mentoring and networking support to help Faith Tech startups succeed.
+                      </p>
+                    </div>
       </div>
     </section>
   );
