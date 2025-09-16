@@ -13,7 +13,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
     <header className="bg-white shadow-sm border-b border-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-36">
-          <div className="flex items-center">
+          <div className={`flex items-center ${mobileMenuOpen ? 'hidden md:flex' : 'flex'}`}>
             <div className="flex-shrink-0 flex items-center">
               <img 
                 src="/images/logo/logo-rectangular.png" 
