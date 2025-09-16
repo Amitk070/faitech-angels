@@ -128,9 +128,14 @@ export function SuccessStories() {
               These startups represent just the beginning of India's Faith Tech revolution. 
               Be part of the next generation of unicorns in the faith-tech space.
             </p>
-            <button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors">
+            <a
+              href="https://forms.gle/V9cUMpt9rJGgPWa79"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-orange-50 transition-colors"
+            >
               Explore Investment Opportunities
-            </button>
+            </a>
           </div>
         </div>
       </div>

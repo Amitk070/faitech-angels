@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, BookOpen, Users, TrendingUp, Building, Star } from 'lucide-react';
+import { BookOpen, Users, TrendingUp, Building, Star } from 'lucide-react';
 
 export const FaithTraditions: React.FC = () => {
   return (
@@ -110,36 +110,6 @@ export const FaithTraditions: React.FC = () => {
           </div>
         </div>
 
-        {/* Cultural Movement */}
-        <div className="bg-gradient-to-r from-orange-600 to-yellow-600 rounded-2xl p-8 text-white">
-          <div className="flex items-center mb-6">
-            <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-              <Heart className="w-6 h-6 text-white" />
-            </div>
-            <h3 className="text-2xl font-bold">Bihar's Cultural Renaissance</h3>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Bihar has given the world universities older than Oxford, philosophies that shaped kingdoms, and art that travelled continents. 
-                Yet too often, its modern image is reduced to headlines instead of heritage.
-              </p>
-              <p className="text-white/90 leading-relaxed">
-                A cultural movement is about more than preservation. It is presence. It is saying: this is who we are, 
-                this is what we create, and this is why it matters today.
-              </p>
-            </div>
-            <div>
-              <p className="text-white/90 mb-4 leading-relaxed">
-                Bihar's festivals, food, folk traditions, textiles, and music aren't relics - they are alive, contemporary, and relevant.
-              </p>
-              <p className="text-white/90 leading-relaxed">
-                When culture is honoured with care, perception shifts naturally. Because when you narrate your own story, 
-                the world listens differently.
-              </p>
-            </div>
-          </div>
-        </div>
 
         {/* Call to Action */}
         <div className="text-center mt-12">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Users, Target, Award, Lightbulb, Shield, Leaf, Smartphone, MapPin, Clock, CheckCircle, ExternalLink } from 'lucide-react';
+import { Calendar, Users, Target, Award, Lightbulb, Shield, Leaf, Smartphone, MapPin, Clock, CheckCircle, ExternalLink, Heart } from 'lucide-react';
 
 export const ChhathHackathon2025: React.FC = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -115,7 +115,7 @@ export const ChhathHackathon2025: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+                href="https://forms.gle/V9cUMpt9rJGgPWa79"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
@@ -143,6 +143,7 @@ export const ChhathHackathon2025: React.FC = () => {
               { id: 'overview', label: 'Overview' },
               { id: 'focus', label: 'Focus Areas' },
               { id: 'timeline', label: 'Timeline' },
+              { id: 'procedure', label: 'How to Participate' },
               { id: 'partners', label: 'Partners' },
               { id: 'mission', label: 'Mission' }
             ].map((tab) => (
@@ -291,6 +292,232 @@ export const ChhathHackathon2025: React.FC = () => {
           </div>
         )}
 
+        {/* Procedure Tab */}
+        {activeTab === 'procedure' && (
+          <div className="space-y-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">How to Participate</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Follow these steps to participate in the Chhath Hackathon 2025 and make a meaningful impact.
+              </p>
+            </div>
+
+            {/* Step-by-Step Procedure */}
+            <div className="space-y-8">
+              {/* Step 1: Registration */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">
+                    1
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Registration & Application</h3>
+                    <div className="bg-orange-50 rounded-xl p-6 mb-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Timeline: 1st Week October 2025</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Startups submit a detailed pitch deck outlining the problem statement, solution, business model, and team. 
+                        A functional prototype, app, or proof-of-concept is required.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-900">What You Need to Submit:</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Detailed pitch deck (PDF format)</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Problem statement & solution</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Business model & revenue plan</span>
+                          </div>
+                        </div>
+                        <div className="space-y-2">
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Team information & roles</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Functional prototype/demo</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Technical documentation</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2: Evaluation */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">
+                    2
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Expert Evaluation & Shortlisting</h3>
+                    <div className="bg-blue-50 rounded-xl p-6 mb-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Timeline: 2nd Week October 2025</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        An expert panel of judges from government, industry, and academia will evaluate submissions 
+                        based on feasibility, scalability, and social impact.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-900">Evaluation Criteria:</h4>
+                      <div className="grid md:grid-cols-3 gap-6">
+                        <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-4">
+                          <Target className="w-8 h-8 text-green-600 mb-3" />
+                          <h5 className="font-semibold text-gray-900 mb-2">Feasibility</h5>
+                          <p className="text-sm text-gray-700">Technical viability and implementation potential</p>
+                        </div>
+                        <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4">
+                          <TrendingUp className="w-8 h-8 text-blue-600 mb-3" />
+                          <h5 className="font-semibold text-gray-900 mb-2">Scalability</h5>
+                          <p className="text-sm text-gray-700">Potential for growth and widespread adoption</p>
+                        </div>
+                        <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4">
+                          <Heart className="w-8 h-8 text-purple-600 mb-3" />
+                          <h5 className="font-semibold text-gray-900 mb-2">Social Impact</h5>
+                          <p className="text-sm text-gray-700">Positive impact on community and festival experience</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3: Final Pitch */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">
+                    3
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Final Pitch Day</h3>
+                    <div className="bg-yellow-50 rounded-xl p-6 mb-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Timeline: 3rd Week October 2025</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Selected teams will present live demonstrations to a distinguished jury of policymakers, 
+                        civic officials, and investors.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-900">Presentation Requirements:</h4>
+                      <div className="space-y-3">
+                        <div className="flex items-center">
+                          <Clock className="w-5 h-5 text-orange-500 mr-3" />
+                          <span className="text-gray-700">10-minute live demonstration</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Users className="w-5 h-5 text-orange-500 mr-3" />
+                          <span className="text-gray-700">5-minute Q&A session with judges</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Award className="w-5 h-5 text-orange-500 mr-3" />
+                          <span className="text-gray-700">Working prototype demonstration</span>
+                        </div>
+                        <div className="flex items-center">
+                          <Target className="w-5 h-5 text-orange-500 mr-3" />
+                          <span className="text-gray-700">Clear value proposition presentation</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4: Recognition */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-start">
+                  <div className="w-12 h-12 bg-orange-600 text-white rounded-full flex items-center justify-center mr-6 text-xl font-bold flex-shrink-0">
+                    4
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">Recognition & Support</h3>
+                    <div className="bg-green-50 rounded-xl p-6 mb-6">
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2">Post-Event Support</h4>
+                      <p className="text-gray-700 leading-relaxed">
+                        Winning teams will receive an exclusive opportunity for mentorship, networking opportunities, 
+                        and potential funding through angel investors.
+                      </p>
+                    </div>
+                    <div className="space-y-4">
+                      <h4 className="text-lg font-semibold text-gray-900">What Winners Get:</h4>
+                      <div className="grid md:grid-cols-2 gap-6">
+                        <div className="space-y-3">
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">₹1,00,000 Prize Pool</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Mentorship from industry experts</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Networking opportunities</span>
+                          </div>
+                        </div>
+                        <div className="space-y-3">
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Potential angel investment</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Pilot program opportunities</span>
+                          </div>
+                          <div className="flex items-center">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
+                            <span className="text-gray-700">Media recognition & publicity</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Registration CTA */}
+            <div className="bg-gradient-to-r from-orange-600 to-yellow-600 rounded-2xl p-8 text-white text-center">
+              <h3 className="text-3xl font-bold mb-4">Ready to Participate?</h3>
+              <p className="text-xl mb-8 max-w-3xl mx-auto">
+                Join us in creating innovative solutions that honor tradition while embracing the future. 
+                Register your startup today!
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://forms.gle/V9cUMpt9rJGgPWa79"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
+                >
+                  Join as Investor
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors duration-300"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Connect on LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Partners Tab */}
         {activeTab === 'partners' && (
           <div className="space-y-8">
@@ -395,12 +622,12 @@ export const ChhathHackathon2025: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+                  href="https://forms.gle/V9cUMpt9rJGgPWa79"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
                 >
-                  Register Your Startup
+                  Join as Investor
                 </a>
                 <a
                   href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"

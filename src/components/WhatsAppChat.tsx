@@ -64,7 +64,7 @@ export function WhatsAppChat() {
                 💰 I'm interested in investing
               </button>
               <button
-                onClick={() => handleWhatsAppClick('Hello! I want to apply for funding for my Faith Tech startup. Can you help me?')}
+                onClick={() => window.open('https://forms.gle/QzCLQHgFrNp48sR29', '_blank')}
                 className="w-full text-left p-2 text-sm bg-gray-50 hover:bg-gray-100 rounded-lg transition-colors"
               >
                 🚀 I want to apply for funding

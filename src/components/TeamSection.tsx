@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
   {
     name: "Amitesh Kumar",
     title: "Advisor",
-    company: "Lending King",
+    company: "Founder ZapQ AI",
     linkedin: "https://linkedin.com/in/amitesh-kumar",
     description: "Entrepreneur bringing innovative financial solutions to the market. Offers mentoring and networking support for financial technology startups.",
     image: "/images/team/amitesh-kumar.jpg"
@@ -65,6 +65,14 @@ const teamMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/pratyush-ambuj-58bb0320",
     description: "Technology expert and startup advisor with deep knowledge in digital innovation. Offers mentoring and networking support for emerging Faith Tech startups.",
     image: "/images/team/pratyush-ambuj.jpg"
+  },
+  {
+    name: "Vijay K.",
+    title: "Advisor",
+    company: "Co founder and COO @ Kesari Awayddings Pvt Ltd",
+    linkedin: "https://www.linkedin.com/in/vijay-k",
+    description: "Co-founder and COO with extensive experience in business operations and strategic planning. Provides mentoring and networking support for Faith Tech ventures.",
+    image: "/images/team/vijay-k.jpg"
   }
 ];
 
@@ -81,7 +89,7 @@ export const TeamSection: React.FC = () => {
                       </p>
                     </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="aspect-square relative">
@@ -107,26 +115,15 @@ export const TeamSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-              <div className="p-2">
-                <h3 className="text-xs font-semibold text-gray-900 mb-1">
+                <div className="p-4">
+                <h3 className="text-sm font-semibold text-gray-900 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-blue-600 font-medium text-xs mb-1">
+                <p className="text-blue-600 font-medium text-xs mb-2">
                   {member.title}
                 </p>
-                <p className="text-gray-600 text-xs mb-1">
+                <p className="text-gray-600 text-xs">
                   {member.company}
-                </p>
-                <p 
-                  className="text-gray-700 text-xs leading-tight"
-                  style={{
-                    display: '-webkit-box',
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: 'vertical',
-                    overflow: 'hidden'
-                  }}
-                >
-                  {member.description}
                 </p>
               </div>
             </div>

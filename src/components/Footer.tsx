@@ -31,8 +31,8 @@ export function Footer() {
               <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About Faith Tech</a></li>
               <li><a href="#market" className="text-gray-300 hover:text-white transition-colors">Market Opportunity</a></li>
               <li><a href="#success-stories" className="text-gray-300 hover:text-white transition-colors">Success Stories</a></li>
-              <li><a href="#invest" className="text-gray-300 hover:text-white transition-colors">Become Investor</a></li>
-              <li><a href="#apply" className="text-gray-300 hover:text-white transition-colors">Apply for Funding</a></li>
+              <li><a href="https://forms.gle/V9cUMpt9rJGgPWa79" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Become Investor</a></li>
+              <li><a href="https://forms.gle/QzCLQHgFrNp48sR29" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">Apply for Funding</a></li>
             </ul>
           </div>
           
@@ -40,13 +40,13 @@ export function Footer() {
             <h4 className="text-lg font-semibold mb-4 text-orange-400">Contact Us</h4>
             <div className="space-y-4">
               <a
-                href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+                href="https://forms.gle/V9cUMpt9rJGgPWa79"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
+                className="inline-flex items-center bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300"
               >
                 <Linkedin className="w-5 h-5 mr-2" />
-                Connect on LinkedIn
+                Join as Investor
               </a>
               <p className="text-gray-300 text-sm">
                 Reach out to us on LinkedIn for investment opportunities, startup applications, and general inquiries.

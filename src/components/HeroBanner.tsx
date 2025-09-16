@@ -55,7 +55,7 @@ export function HeroBanner() {
               {banners[currentBanner].description}
             </p>
             <a
-              href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+              href="https://forms.gle/V9cUMpt9rJGgPWa79"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all transform hover:scale-105 shadow-lg"

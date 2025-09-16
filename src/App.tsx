@@ -7,7 +7,6 @@ import { SuccessStories } from './components/SuccessStories';
 import { TeamSection } from './components/TeamSection';
 import { ChhathPujaHackathon } from './components/ChhathPujaHackathon';
 import { ChhathHackathon2025 } from './components/ChhathHackathon2025';
-import { FaithTraditions } from './components/FaithTraditions';
 import { InvestorForm } from './components/InvestorForm';
 import { StartupApplication } from './components/StartupApplication';
 import { BlogPage } from './components/BlogPage';
@@ -21,6 +20,8 @@ function App() {
 
   const renderPage = () => {
     switch (currentPage) {
+      case 'about':
+        return <AboutFaithTech />;
       case 'chhath-hackathon':
         return <ChhathHackathon2025 />;
       case 'blog':
@@ -32,11 +33,9 @@ function App() {
           <>
             <HeroBanner />
             <ChhathPujaHackathon />
-            <AboutFaithTech />
             <MarketOpportunity />
             <SuccessStories />
             <TeamSection />
-            <FaithTraditions />
             <InvestorForm />
             <StartupApplication />
           </>

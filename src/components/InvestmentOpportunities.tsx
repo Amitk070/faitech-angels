@@ -356,7 +356,7 @@ export const InvestmentOpportunities: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+              href="https://forms.gle/V9cUMpt9rJGgPWa79"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
@@ -364,7 +364,7 @@ export const InvestmentOpportunities: React.FC = () => {
               Join as Investor
             </a>
             <a
-              href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+              href="https://forms.gle/V9cUMpt9rJGgPWa79"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors duration-300"

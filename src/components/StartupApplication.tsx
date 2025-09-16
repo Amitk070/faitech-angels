@@ -42,13 +42,13 @@ export function StartupApplication() {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"
+              href="https://forms.gle/QzCLQHgFrNp48sR29"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
               <MessageCircle className="w-5 h-5 mr-2" />
-              Send Pitch Deck via LinkedIn DM
+              Apply for Funding
             </a>
             <a
               href="https://www.linkedin.com/company/faith-tech-angel-investor-network/"

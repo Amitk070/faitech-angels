@@ -13,25 +13,15 @@ interface HackathonBanner {
 const hackathonBanners: HackathonBanner[] = [
   {
     id: 1,
-    title: "Chhath Puja Tech Innovation Challenge",
-    description: "Celebrate the ancient festival of Chhath Puja with innovative tech solutions that honor tradition while embracing the future. Join us in creating digital solutions that preserve and promote our cultural heritage.",
+    title: "Chhath Tech Innovation Challenge",
+    description: "Celebrate the ancient festival of Chhath with innovative tech solutions that honor tradition while embracing the future. Join us in creating digital solutions that preserve and promote our cultural heritage.",
     image: "/images/10477.jpg",
-    date: "November 15-17, 2024",
-    prize: "₹2,00,000 Prize Pool"
+    date: "Early October 1st, 2025",
+    prize: "₹1,00,000 Prize Pool"
   }
 ];
 
 export const ChhathPujaHackathon: React.FC = () => {
-  const [isNominating, setIsNominating] = useState(false);
-
-  const handleNominate = () => {
-    setIsNominating(true);
-    // Simulate form submission
-    setTimeout(() => {
-      setIsNominating(false);
-      alert('Thank you for your nomination! We will contact you soon.');
-    }, 2000);
-  };
 
   return (
     <section className="py-16 bg-gradient-to-br from-orange-50 to-yellow-50">
@@ -41,11 +31,11 @@ export const ChhathPujaHackathon: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center justify-center mb-4 md:mb-6">
             <FaithTechLogo size="lg" className="mb-4 md:mb-0 md:mr-4" />
             <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
-              Chhath Puja Hackathon 2025
+              Chhath Hackathon 2025
             </h2>
           </div>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Join us in celebrating the festival of Chhath Puja with innovative technology solutions and startup showcases.
+            Join us in celebrating the festival of Chhath with innovative technology solutions and startup showcases.
           </p>
         </div>
 
@@ -116,9 +106,14 @@ export const ChhathPujaHackathon: React.FC = () => {
                       </div>
                       
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0">
-                        <button className="bg-white text-orange-600 px-4 py-3 md:px-4 md:py-2 rounded-lg text-sm md:text-sm font-semibold hover:bg-gray-100 transition-colors duration-300 w-full md:w-auto">
-                          Nominate Your Startup
-                        </button>
+                        <a
+                          href="https://forms.gle/QzCLQHgFrNp48sR29"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-block bg-white text-orange-600 px-4 py-3 md:px-4 md:py-2 rounded-lg text-sm md:text-sm font-semibold hover:bg-gray-100 transition-colors duration-300 w-full md:w-auto text-center"
+                        >
+                          Apply for Funding
+                        </a>
                         <div className="text-center md:text-right">
                           <div className="text-sm md:text-lg font-bold text-yellow-300">FAITH TECH</div>
                           <div className="text-xs text-white/80">Angel Investor Network</div>
@@ -138,17 +133,6 @@ export const ChhathPujaHackathon: React.FC = () => {
           <div className="bg-white rounded-2xl p-4 md:p-8 shadow-lg">
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">Event Details</h3>
             <div className="space-y-3 md:space-y-4">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3 md:mr-4">
-                  <svg className="w-3 h-3 md:w-4 md:h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-900 text-sm md:text-base">Duration</h4>
-                  <p className="text-gray-600 text-sm md:text-base">3 days of intensive development and networking</p>
-                </div>
-              </div>
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-6 h-6 md:w-8 md:h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3 md:mr-4">
                   <svg className="w-3 h-3 md:w-4 md:h-4 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
@@ -212,32 +196,21 @@ export const ChhathPujaHackathon: React.FC = () => {
             Ready to Showcase Your Startup?
           </h3>
           <p className="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto px-4">
-            Nominate your startup for the Chhath Puja Hackathon and get a chance to present your innovative solution to leading investors and industry experts.
+            Nominate your startup for the Chhath Hackathon and get a chance to present your innovative solution to leading investors and industry experts.
           </p>
-          <button
-            onClick={handleNominate}
-            disabled={isNominating}
-            className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 border border-transparent text-base md:text-lg font-medium rounded-lg text-white bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 transform hover:scale-105 w-full md:w-auto"
+          <a
+            href="https://forms.gle/QzCLQHgFrNp48sR29"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-6 py-3 md:px-8 md:py-4 border border-transparent text-base md:text-lg font-medium rounded-lg text-white bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105 w-full md:w-auto"
           >
-            {isNominating ? (
-              <>
-                <svg className="animate-spin -ml-1 mr-3 h-4 w-4 md:h-5 md:w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                Nominating...
-              </>
-            ) : (
-              <>
-                <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-                Nominate Your Startup
-              </>
-            )}
-          </button>
+            <svg className="w-5 h-5 md:w-6 md:h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+            </svg>
+            Apply for Funding
+          </a>
           <p className="text-xs md:text-sm text-gray-500 mt-3 md:mt-4">
-            Nominations close on November 10, 2024
+            Nominations close on September 25, 2025
           </p>
         </div>
       </div>

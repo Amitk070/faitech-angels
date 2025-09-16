@@ -35,10 +35,10 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
                 Home
               </button>
               <button 
-                onClick={() => setCurrentPage('home')}
+                onClick={() => setCurrentPage('about')}
                 className="text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                About Faith Tech
+                About Us
               </button>
               <button 
                 onClick={() => setCurrentPage('chhath-hackathon')}
@@ -69,7 +69,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
                 Invest
               </button>
               <button 
-                onClick={() => setCurrentPage('home')}
+                onClick={() => window.open('https://forms.gle/QzCLQHgFrNp48sR29', '_blank')}
                 className="text-gray-700 hover:text-orange-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
                 Apply
@@ -117,10 +117,10 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
                 Home
               </button>
               <button 
-                onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
+                onClick={() => { setCurrentPage('about'); setMobileMenuOpen(false); }}
                 className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
-                About Faith Tech
+                About Us
               </button>
               <button 
                 onClick={() => { setCurrentPage('chhath-hackathon'); setMobileMenuOpen(false); }}
@@ -151,7 +151,7 @@ export function Header({ mobileMenuOpen, setMobileMenuOpen, currentPage, setCurr
                 Invest
               </button>
               <button 
-                onClick={() => { setCurrentPage('home'); setMobileMenuOpen(false); }}
+                onClick={() => { window.open('https://forms.gle/QzCLQHgFrNp48sR29', '_blank'); setMobileMenuOpen(false); }}
                 className="w-full text-left text-gray-700 hover:text-orange-600 hover:bg-orange-50 px-4 py-3 rounded-lg text-base font-medium transition-colors"
               >
                 Apply
